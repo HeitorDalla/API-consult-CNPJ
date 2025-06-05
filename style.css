@@ -5,3 +5,23 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+body {
+    background-color: rgb(176, 215, 249);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#container-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgba(0, 0, 255, 0.324);
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.258);
+}

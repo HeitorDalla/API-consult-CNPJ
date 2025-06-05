@@ -3,14 +3,13 @@
 document.querySelector("#btnBuscar").addEventListener("click", async (e) => {
     e.preventDefault();
 
-    const respostaAPI = document.querySelector("#respostaAPI");
+    const containerResposta = document.querySelector("#containerResposta");
     const cnpj = document.querySelector("#cnpj").value;
 
-    const url = `https://www.receitaws.com.br/v1/cnpj/${cnpj}`;
+    const url = `https://brasilapi.com.br/api/cnpj/v1/${cnpj}`;
 
     const dados = requisicaoAPI(url);
-
-    popularDados(dados, respostaAPI);
+    popularDados(dados, containerResposta);
 })
 
 async function requisicaoAPI (url) {
@@ -28,7 +27,6 @@ async function requisicaoAPI (url) {
     }
 }
 
-function popularDados (dados, resposta){
-    console.log(dados)
-    console.log(dados)
+function popularDados (dados, containerResposta){
+    
 }
