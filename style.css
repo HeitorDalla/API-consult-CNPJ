@@ -24,4 +24,25 @@ body {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.258);
+    width: 400px;
+    gap: 10px;
+}
+
+h1 {
+    margin-bottom: 14px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(0, 81, 255, 0.678);
+    transition: background-color 0.3s ease;
+    margin: 20px 10px 10px 10px;
 }
