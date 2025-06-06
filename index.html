@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CNPJ</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Para exportar para PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.3/html2pdf.bundle.min.js" integrity="sha512-yu5WG6ewBNKx8svICzUA01vozhmiQCVfzjzW40eCHJdsDRaOifh9hPlWBDex5b32gWCzawTp1F3FJz60ps6TnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="container-data">
         <h1>Consulta CNPJ</h1>
         <input type="text" name="cnpj" id="cnpj">
         <button type="button" id="btnBuscar">Buscar</button>
+        <button type="button" id="converterPDF">Converter para PDF</button>
     </div>
     <div id="containerResposta"></div>
 

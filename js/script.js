@@ -30,3 +30,18 @@ function popularDados (dados, containerResposta) {
         <p><strong>UF:</strong> ${dados.uf}</p>
     `;
 }
+
+document.querySelector("#converterPDF").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const conteudo = document.querySelector("#containerResposta");
+
+    const options = {
+        margin: [10, 10, 10, 10],
+        filename: 'dados_cnpj.pdf',
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: "mm", format: "a4", orientation: "portrait"}
+    }
+
+    html2pdf().set(options).from(conteudo).save();
+})
