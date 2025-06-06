@@ -45,9 +45,3 @@ document.querySelector("#converterPDF").addEventListener("click", (e) => {
 
     html2pdf().set(options).from(conteudo).save();
 })
-
-docment.querySelector("#converterEXCEL").addEventListener("click", (e) => {
-    e.preventDefault();
-
-    
-})
